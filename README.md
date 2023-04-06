@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+This is Trina, singing in 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
