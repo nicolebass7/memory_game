@@ -1,3 +1,5 @@
 {
-    "play": "Jugar!"
+    "play": "Jugar!",
+    "leaderboard" : "Clasificación",
+    "signout": "Salir"
 }

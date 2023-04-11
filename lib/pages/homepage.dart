@@ -52,18 +52,18 @@ class _HomePageState extends State<HomePage> {
               width: 300,
               child: ElevatedButton(
                   onPressed: () {loadLeaderboard();},
-                  child: const Text(
-                      style: TextStyle(
+                  child: Text(
+                      style: const TextStyle(
                         fontSize: 30,
                       ),
-                      "Leaderboard")
+                      AppLocalizations.of(context)!.leaderboard)
               ),
 
             ),
             const SizedBox(height: 90),
             OutlinedButton(
               onPressed: () {return;},
-              child: const Text("Sign out"),
+              child: Text(AppLocalizations.of(context)!.signout),
             )
           ],
         ),
