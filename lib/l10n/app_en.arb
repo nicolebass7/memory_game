@@ -1,0 +1,7 @@
+{
+    "play": "Play!",
+    "@play": {
+        "description": "The message for the play button."
+    }
+
+}
