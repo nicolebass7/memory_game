@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:memory_game/pages/homepage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'auth_service.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
