@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "584691722174",
+    "project_id": "matchwiz-final-project",
+    "storage_bucket": "matchwiz-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584691722174:android:fb3c3a4b982fa64096fbef",
+        "android_client_info": {
+          "package_name": "com.example.memory_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584691722174-ugij4nvm3cau3qqtudp40dpa85up358o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHbBP3-sCz-cVUFj612YuHUg8e7MPzbDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584691722174-ugij4nvm3cau3qqtudp40dpa85up358o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "584691722174-bno8p19f77655kdd035uqjg1it5jph66.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.memoryGame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

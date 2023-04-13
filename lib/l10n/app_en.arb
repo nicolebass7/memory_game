@@ -1,0 +1,14 @@
+{
+    "play": "Play!",
+    "@play": {
+        "description": "The message for the play button."
+    },
+    "leaderboard": "Leaderboard",
+    "@leaderboard": {
+        "description": "The message for the leaderboard button."
+    },
+    "signout": "Sign out",
+    "@leaderboard": {
+        "description": "The message for the signout button."
+    }
+}
