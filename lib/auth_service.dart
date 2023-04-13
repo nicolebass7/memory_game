@@ -5,7 +5,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'home_page.dart';
 import 'login_page.dart';
 class AuthService{
-
   handleAuthState(){
     return StreamBuilder(
       stream: FirebaseAuth.instance.authStateChanges(),
