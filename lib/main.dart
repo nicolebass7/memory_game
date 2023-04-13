@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:memory_game/pages/homepage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'auth_service.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -10,14 +10,11 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const MyApp());
-
+  runApp(MyApp());
 }
-//hello
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,7 +32,8 @@ class MyApp extends StatelessWidget {
         Locale('en'), // English
         Locale('es'), // Spanish
       ],
-      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: AuthService().handleAuthState(),
     );
   }
 }

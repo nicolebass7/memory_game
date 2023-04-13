@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -47,29 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCTgA9qiHb89eb9iCU7o7pNq4X0PdOpSOk',
-    appId: '1:584691722174:web:47c4afd7e7c21a9b96fbef',
-    messagingSenderId: '584691722174',
-    projectId: 'matchwiz-final-project',
-    authDomain: 'matchwiz-final-project.firebaseapp.com',
-    storageBucket: 'matchwiz-final-project.appspot.com',
+    apiKey: 'AIzaSyDcPLhttVob2PJmSrp42iax5zMfLVqw82I',
+    appId: '1:655046322931:web:cd6c13a54e463cc2ace586',
+    messagingSenderId: '655046322931',
+    projectId: 'final-project-a819f',
+    authDomain: 'final-project-a819f.firebaseapp.com',
+    storageBucket: 'final-project-a819f.appspot.com',
+    measurementId: 'G-ECH0Q8VSRV',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDHbBP3-sCz-cVUFj612YuHUg8e7MPzbDk',
-    appId: '1:584691722174:android:fb3c3a4b982fa64096fbef',
-    messagingSenderId: '584691722174',
-    projectId: 'matchwiz-final-project',
-    storageBucket: 'matchwiz-final-project.appspot.com',
+    apiKey: 'AIzaSyCNncdvHvyVuJYu6Gf4bJbpF9ID4M2umMI',
+    appId: '1:655046322931:android:f1976af93e3cf6d7ace586',
+    messagingSenderId: '655046322931',
+    projectId: 'final-project-a819f',
+    storageBucket: 'final-project-a819f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDMubUdF3fCtXwp-MqgbvPiokQAPo2fuEA',
-    appId: '1:584691722174:ios:3047b1be2c09cc5196fbef',
-    messagingSenderId: '584691722174',
-    projectId: 'matchwiz-final-project',
-    storageBucket: 'matchwiz-final-project.appspot.com',
-    iosClientId: '584691722174-bno8p19f77655kdd035uqjg1it5jph66.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBAX1JpwaMI27e2v2OEEkyquGt8up3Szz4',
+    appId: '1:655046322931:ios:488aa553c2bade0bace586',
+    messagingSenderId: '655046322931',
+    projectId: 'final-project-a819f',
+    storageBucket: 'final-project-a819f.appspot.com',
+    androidClientId: '655046322931-kcf8o8jfakijlrgp50q3mrd8sga148q5.apps.googleusercontent.com',
+    iosClientId: '655046322931-7gl3eqsnik8q9k41mkbgehvia8cihukr.apps.googleusercontent.com',
+    iosBundleId: 'com.example.memoryGame',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBAX1JpwaMI27e2v2OEEkyquGt8up3Szz4',
+    appId: '1:655046322931:ios:488aa553c2bade0bace586',
+    messagingSenderId: '655046322931',
+    projectId: 'final-project-a819f',
+    storageBucket: 'final-project-a819f.appspot.com',
+    androidClientId: '655046322931-kcf8o8jfakijlrgp50q3mrd8sga148q5.apps.googleusercontent.com',
+    iosClientId: '655046322931-7gl3eqsnik8q9k41mkbgehvia8cihukr.apps.googleusercontent.com',
     iosBundleId: 'com.example.memoryGame',
   );
 }
