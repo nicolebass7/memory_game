@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:memory_game/pages/game_screen.dart';
+import 'package:memory_game/pages/leaderboard.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -71,11 +73,20 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-void playGame() {
+  Future<void> playGame() async{
+    // Push a game screen on the navigator stack
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const GameScreen())
+    );
+  }
 
-}
-void loadLeaderboard() {
-
-}
+  Future<void> loadLeaderboard() async {
+    // Push leaderboard screen onto nav stack
+    await Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LeaderBoard())
+    );
+  }
   
 }

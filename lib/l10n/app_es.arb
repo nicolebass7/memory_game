@@ -1,5 +1,8 @@
 {
     "play": "Jugar!",
     "leaderboard" : "Clasificación",
-    "signout": "Salir"
+    "signout": "Salir",
+    "leadermessage": "Los diez mejores tiempos",
+    "userheader": "Usario : Tiempo",
+    "back": "Volver"
 }

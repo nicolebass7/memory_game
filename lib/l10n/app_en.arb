@@ -8,7 +8,19 @@
         "description": "The message for the leaderboard button."
     },
     "signout": "Sign out",
-    "@leaderboard": {
+    "@signout": {
         "description": "The message for the signout button."
+    },
+    "leadermessage": "Top ten fastest times",
+    "@leadermessage": {
+        "description": "The message describing the leaderboard page."
+    },
+    "userheader": "User : Time",
+    "@userheader": {
+        "description": "The header that denotes the username and time columns on the leaderboard."
+    },
+    "back": "Back",
+    "@back": {
+        "description": "The message for the back button."
     }
 }
