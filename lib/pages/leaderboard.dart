@@ -32,7 +32,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
           }
           return Scaffold(
             appBar: AppBar(
-                title: const Text('Leaderboard')
+                title: Text(AppLocalizations.of(context)!.leaderboard)
             ),
             body: ListView(
               children: [
@@ -68,9 +68,12 @@ class _LeaderBoardState extends State<LeaderBoard> {
         });
   }
   Widget _toWidget(int index) {
+    int time = _entries?.elementAt(index).time ?? 0;
+    int seconds = time % 60;
+    int minutes = ((time - seconds) / 60).truncate();
     return ListTile(
       title: Text(
-        "${index+1}: ${_entries?.elementAt(index).user ?? 'Empty'} : ${_entries?.elementAt(index).time.toString() ?? ' '}",
+        "${index+1}: ${_entries?.elementAt(index).user ?? 'Empty'} : $minutes:$seconds",
         textAlign: TextAlign.center,
       ),
     );
