@@ -18,6 +18,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
 
   @override
   Widget build(BuildContext context) {
+    print(_entries?.length);
     return FutureBuilder<List<Entry>>(
         future: _entriesFuture,
         builder: (context, snapshot) {
@@ -35,7 +36,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
             appBar: AppBar(
                 title: const Text('Leaderboard')
             ),
-            body: Column(
+            body: ListView(
               children: [
                 //The top of screen message describing the leaderboard
                 Text(
@@ -47,11 +48,16 @@ class _LeaderBoardState extends State<LeaderBoard> {
                 Text(
                     AppLocalizations.of(context)!.userheader,
                 ),
-                ListView.separated(
-                  itemBuilder: (_, index) => _toWidget(index),
-                  separatorBuilder: (_, __) => const Divider(),
-                  itemCount: _entries!.length,
-                ),
+                ..._entries!.asMap().entries.map((entry) => _toWidget(entry.key)),
+                // Expanded(
+                //   child: SingleChildScrollView(
+                //     child: ListView.separated(
+                //       itemBuilder: (_, index) => _toWidget(index),
+                //       separatorBuilder: (_, __) => const Divider(),
+                //       itemCount: _entries!.length,
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           );
