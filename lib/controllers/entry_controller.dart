@@ -12,7 +12,7 @@ class EntryController {
     return FirestoreStorage().getEntries();
   }
 
-  Future<Entry> addEntry(String user, int time) {
-    return Future.value(FirestoreStorage().insertEntry(user, time));
+  Future<void> addEntry(String user, int time) {
+    return FirestoreStorage().insertEntry(user, time);
   }
 }
