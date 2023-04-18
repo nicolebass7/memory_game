@@ -18,7 +18,6 @@ class _LeaderBoardState extends State<LeaderBoard> {
 
   @override
   Widget build(BuildContext context) {
-    print(_entries?.length);
     return FutureBuilder<List<Entry>>(
         future: _entriesFuture,
         builder: (context, snapshot) {
@@ -31,7 +30,6 @@ class _LeaderBoardState extends State<LeaderBoard> {
               body: const CircularProgressIndicator(),
             );
           }
-          print('a');
           return Scaffold(
             appBar: AppBar(
                 title: const Text('Leaderboard')
@@ -42,31 +40,39 @@ class _LeaderBoardState extends State<LeaderBoard> {
                 Text(
                   //style: Theme.of(context).textTheme.displayMedium,
                   AppLocalizations.of(context)!.leadermessage,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 30,
+                  ),
                 ),
-                const SizedBox(height:80),
+                const SizedBox(height:10),
                 // Header to show user : Time
                 Text(
                     AppLocalizations.of(context)!.userheader,
+                    textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                const Divider(
+                  color: Colors.grey,
+                  height: 25,
+                  thickness: 2,
+                  indent: 5,
+                  endIndent: 5,
                 ),
                 ..._entries!.asMap().entries.map((entry) => _toWidget(entry.key)),
-                // Expanded(
-                //   child: SingleChildScrollView(
-                //     child: ListView.separated(
-                //       itemBuilder: (_, index) => _toWidget(index),
-                //       separatorBuilder: (_, __) => const Divider(),
-                //       itemCount: _entries!.length,
-                //     ),
-                //   ),
-                // ),
               ],
             ),
           );
         });
   }
   Widget _toWidget(int index) {
-    print('b');
     return ListTile(
-      title: Text("${_entries?.elementAt(index).user ?? 'Empty'} : ${_entries?.elementAt(index).time.toString() ?? ' '}"),
+      title: Text(
+        "${index+1}: ${_entries?.elementAt(index).user ?? 'Empty'} : ${_entries?.elementAt(index).time.toString() ?? ' '}",
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

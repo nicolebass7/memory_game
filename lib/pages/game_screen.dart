@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:memory_game/controllers/entry_controller.dart';
 import 'info_card.dart';
 
 class GameScreen extends StatefulWidget {
@@ -93,7 +95,7 @@ class _GameScreenState extends State<GameScreen> {
                 padding: const EdgeInsets.all(16.0),
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: () {
+                    onTap: () async {
                       print(_game.card_list[index]);
                       setState(() {
                         _game.gameImg![index] = _game.card_list[index];
@@ -109,6 +111,9 @@ class _GameScreenState extends State<GameScreen> {
                           if (!_game.gameImg!.any((img) => img == Game.cardPath)) {
                             // stop
                             timer.cancel();
+                            // push to the database
+                            await EntryController().addEntry(FirebaseAuth.instance.currentUser!.displayName!,(addSeconds + addMinutes * 60));
+                            Navigator.pop(context);
                           }
                         } else {
                           print(false);
