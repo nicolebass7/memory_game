@@ -1,9 +1,6 @@
 import 'dart:async';
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'info_card.dart';
 
 class GameScreen extends StatefulWidget {
@@ -20,15 +17,20 @@ class _GameScreenState extends State<GameScreen> {
 
   void addMinute() {
     setState(() {
-      if(addSeconds > 60){
+      if(addSeconds >= 60){
         addMinutes++;
       }
     });
   }
+
   void addSecond() {
     setState(() {
-      addSeconds++ %60;
-
+      if(addSeconds >= 60) {
+        addSeconds / 60;
+        addSeconds = 0;
+      } else{
+        addSeconds++;
+      }
 
     });
   }
@@ -57,7 +59,6 @@ class _GameScreenState extends State<GameScreen> {
     final shownMinutes = '$addMinutes';
     final shownSeconds = '$addSeconds';
 
-
     return Scaffold(
       backgroundColor: const Color(0xFFE55870),
       body: Column(
@@ -79,12 +80,6 @@ class _GameScreenState extends State<GameScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
           ),
-
-          // SizedBox(
-          //height: 800,
-          //width: 800,
-          // height: MediaQuery.of(context).size.width,
-          //width: MediaQuery.of(context).size.width,
 
           Center(
             child: GridView.builder(
