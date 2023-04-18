@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:memory_game/pages/game_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,24 +31,17 @@ class _HomePageState extends State<HomePage> {
               "MatchWiz!",
 
             ),
-            const SizedBox(height:30),
-            Text(
-                style: Theme.of(context).textTheme.labelLarge,
-                textAlign: TextAlign.center,
-                "Race to match each pair of pictures and labels."
-                    "\nAre you a Match Wiz?"
-            ),
-            const SizedBox(height:70),
+            const SizedBox(height:80),
             SizedBox(
                 height: 100,
                 width: 300,
                 child: ElevatedButton(
                     onPressed: () {playGame();},
-                    child: const Text(
-                        style: TextStyle(
+                    child: Text(
+                        style: const TextStyle(
                           fontSize: 30,
                         ),
-                        "Play!")
+                        AppLocalizations.of(context)!.play)
                 )
             ),
             const SizedBox(
@@ -58,18 +52,18 @@ class _HomePageState extends State<HomePage> {
               width: 300,
               child: ElevatedButton(
                   onPressed: () {loadLeaderboard();},
-                  child: const Text(
-                      style: TextStyle(
+                  child: Text(
+                      style: const TextStyle(
                         fontSize: 30,
                       ),
-                      "Leaderboard")
+                      AppLocalizations.of(context)!.leaderboard)
               ),
 
             ),
             const SizedBox(height: 90),
             OutlinedButton(
               onPressed: () {return;},
-              child: const Text("Sign out"),
+              child: Text(AppLocalizations.of(context)!.signout),
             )
           ],
         ),
@@ -79,12 +73,9 @@ class _HomePageState extends State<HomePage> {
 
 void playGame() {
 
-    Navigator.of(context).push(MaterialPageRoute(builder: (_) => GameScreen()));
-
 }
 void loadLeaderboard() {
-   //change to leaderboard screen
-  //Navigator.of(context).push(MaterialPageRoute(builder: (_) => GameScreen()));
+
 }
   
 }

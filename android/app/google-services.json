@@ -1,37 +1,45 @@
 {
   "project_info": {
-    "project_number": "584691722174",
-    "project_id": "matchwiz-final-project",
-    "storage_bucket": "matchwiz-final-project.appspot.com"
+    "project_number": "655046322931",
+    "project_id": "final-project-a819f",
+    "storage_bucket": "final-project-a819f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:584691722174:android:fb3c3a4b982fa64096fbef",
+        "mobilesdk_app_id": "1:655046322931:android:f1976af93e3cf6d7ace586",
         "android_client_info": {
           "package_name": "com.example.memory_game"
         }
       },
       "oauth_client": [
         {
-          "client_id": "584691722174-ugij4nvm3cau3qqtudp40dpa85up358o.apps.googleusercontent.com",
+          "client_id": "655046322931-kcf8o8jfakijlrgp50q3mrd8sga148q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.memory_game",
+            "certificate_hash": "1adb571aea519fe8c861039548b715d3146b0324"
+          }
+        },
+        {
+          "client_id": "655046322931-d33onesuk4iad5j49k63jumggo45bl7l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDHbBP3-sCz-cVUFj612YuHUg8e7MPzbDk"
+          "current_key": "AIzaSyCNncdvHvyVuJYu6Gf4bJbpF9ID4M2umMI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "584691722174-ugij4nvm3cau3qqtudp40dpa85up358o.apps.googleusercontent.com",
+              "client_id": "655046322931-d33onesuk4iad5j49k63jumggo45bl7l.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "584691722174-bno8p19f77655kdd035uqjg1it5jph66.apps.googleusercontent.com",
+              "client_id": "655046322931-7gl3eqsnik8q9k41mkbgehvia8cihukr.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "com.example.memoryGame"

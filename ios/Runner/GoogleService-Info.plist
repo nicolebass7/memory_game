@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>584691722174-bno8p19f77655kdd035uqjg1it5jph66.apps.googleusercontent.com</string>
+	<string>655046322931-7gl3eqsnik8q9k41mkbgehvia8cihukr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.584691722174-bno8p19f77655kdd035uqjg1it5jph66</string>
+	<string>com.googleusercontent.apps.655046322931-7gl3eqsnik8q9k41mkbgehvia8cihukr</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDMubUdF3fCtXwp-MqgbvPiokQAPo2fuEA</string>
+	<string>AIzaSyBAX1JpwaMI27e2v2OEEkyquGt8up3Szz4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>584691722174</string>
+	<string>655046322931</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.memoryGame</string>
 	<key>PROJECT_ID</key>
-	<string>matchwiz-final-project</string>
+	<string>final-project-a819f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>matchwiz-final-project.appspot.com</string>
+	<string>final-project-a819f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:584691722174:ios:3047b1be2c09cc5196fbef</string>
+	<string>1:655046322931:ios:488aa553c2bade0bace586</string>
 </dict>
 </plist>
